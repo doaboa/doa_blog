@@ -1,7 +1,6 @@
 %head
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-  %h1= "#{@name}'s Blog" 
-%br
+
 %body
-  - @posts.each do |post|
-    %h2= link_to post.title, post_path(post.id)
+  %h2= @post.title
+  %p= @post.body
