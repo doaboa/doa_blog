@@ -1,6 +1,8 @@
 %head
-  %h1 Bloggity 
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  %h1= "#{@name}'s Blog" 
 
 %body
-  %h2 Blog Post
-  %p Heyheyhey
+  - @posts.each do |t|
+    %h2= t.title
+    %p= t.body
