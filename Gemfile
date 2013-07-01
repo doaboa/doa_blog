@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'haml-rails', '>= 0.3.4'
 
-group :development development do
+group :development do
   gem 'sqlite3'
 end
 
