@@ -3,5 +3,8 @@
   %h1= "#{@name}'s Blog" 
 %br
 %body
+  %a{ :href => '/posts/new' }
+    New Post
+  %br  
   - @posts.each do |post|
     %h2= link_to post.title, post_path(post.id)
