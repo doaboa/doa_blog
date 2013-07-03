@@ -1,12 +1,12 @@
 DoaBlog::Application.routes.draw do
 
-get '/posts' => 'posts#index'
-get '/posts/:id' => 'posts#show', as: 'post'
-get '/posts/new' => 'posts#new'
-post '/posts' => 'posts#create'
-get '/posts/:id/edit' => 'posts#edit', as:'post_edit'
-put '/posts/:id' => 'posts#update'
-delete 'posts/:id' => 'post#destroy'
+  get '/posts' => 'posts#index'
+  get '/posts/new' => 'posts#new'
+  get '/posts/:id' => 'posts#show', as: 'post'
+  post '/posts' => 'posts#create'
+  get '/posts/:id/edit' => 'posts#edit', as:'post_edit'
+  put '/posts/:id' => 'posts#update'
+  delete 'posts/:id' => 'posts#destroy'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
