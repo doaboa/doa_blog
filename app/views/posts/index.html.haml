@@ -1,10 +1,11 @@
 %head
   %link{"href" => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css", "rel" => "stylesheet"}
-  %h1= "#{@name}'s Blog" 
+  %h1= "Young, Clueless, Determined" 
 %br
 %body
-  %a{ :href => '/posts/new' }
-    New Post
+  / hiding the new post command... i can type manually
+  / %a{ :href => '/posts/new' }
+  /   New Post
   %br  
   - @posts.each do |post|
     %h2= link_to post.title, post_path(post.id)
